@@ -2,7 +2,7 @@
 // let score=null
 // let score=true
 // let score=false
-let score= 1
+let score= 0
 
 console.log(typeof score);
 console.log(typeof(score));
