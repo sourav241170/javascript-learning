@@ -51,6 +51,16 @@ const DCHeroes= ["Superman", "Flash", "Batman"]
 // console.log(Heroes);
 
 const allHeroes= [...marvelHeroes, ...DCHeroes] // Mostly use this as this has no limitation
-console.log(allHeroes);
+// console.log(allHeroes);
 
 
+const newArray2= [1, 2, [3, 4, [5, 6]]]
+const flatArray= newArray2.flat(Infinity) //Flat an array with multiple depths
+console.log(flatArray);
+
+console.log(Array.from("Sourav")); //Converts to an Array
+
+let score1= 100
+let score2= 200
+let score3= 300
+console.log(Array.of(score1, score2, score3));
