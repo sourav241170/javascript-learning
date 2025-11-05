@@ -15,26 +15,42 @@ const myArr2= new Array("Ironman", "Spiderman", "Thor", "Loki")
 // myArr.pop()
 
 myArr.unshift(9) //add an element at the start of an array
-console.log(myArr);
+// console.log(myArr);
 
 myArr.shift() //remove an element from the start of an array
-console.log(myArr);
+// console.log(myArr);
 
 const newArray= myArr.join() //Changes the type
-console.log(newArray);
-console.log(typeof newArray);
+// console.log(newArray);
+// console.log(typeof newArray);
 
 //Slice and Splice
 //Slice makes a copy of the mentioned range from the original Array without changing the original Array
 //Splice deletes the range from the original Array
 
 
-console.log("A", myArr);
+// console.log("A", myArr);
 
-const myNew1= myArr.slice(1,5)
-console.log(myArr);
-console.log("Slice", myNew1);
+// const myNew1= myArr.slice(1,5)
+// console.log(myArr);
+// console.log("Slice", myNew1);
 
-const myNew2= myArr.splice(1,5)
-console.log(myArr);
-console.log("Splice", myNew2);
+// const myNew2= myArr.splice(1,5)
+// console.log(myArr);
+// console.log("Splice", myNew2);
+
+
+
+const marvelHeroes= ["Ironman", "Spiderman", "Thor", "Loki"]
+const DCHeroes= ["Superman", "Flash", "Batman"]
+
+// marvelHeroes.push(DCHeroes) //Pushes the array DCHeroes as a single element
+// console.log(marvelHeroes);
+
+// const Heroes= marvelHeroes.concat(DCHeroes) //Merges the arrays
+// console.log(Heroes);
+
+const allHeroes= [...marvelHeroes, ...DCHeroes] // Mostly use this as this has no limitation
+console.log(allHeroes);
+
+
