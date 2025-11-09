@@ -43,4 +43,24 @@ function loginUserMessage(username){
     }
 }
 
-console.log(loginUserMessage());
+// console.log(loginUserMessage());
+
+
+
+//++++++++++++ Shopping Cart total Amount +++++++++++
+function calculateCartPrice(...num1){ // "..." is use for both Rest and spread. In this case, it is Rest which converts all the numbers to an array.
+    return num1
+}
+// console.log(calculateCartPrice(200, 400, 600));
+
+const user={
+    userName: "Sourav",
+    price: 299
+}
+
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.userName} and the price is ${anyObject.price}`);
+    
+}
+
+handleObject(user)
