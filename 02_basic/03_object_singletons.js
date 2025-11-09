@@ -47,10 +47,26 @@ const users= [
 ]
 
 users[1].email
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
+
+//+++++++ Destructuring ++++++++++
+
+const course={
+    courseName: "Javascript for Beginners",
+    coursePrice: "999",
+    courseInstructor: "James"
+}
+
+// console.log(course.courseInstructor); //Traditional
+
+const {courseInstructor}= course
+console.log(courseInstructor);
+
+const {courseInstructor: instructor}= course //destructure
+console.log(instructor);
 
