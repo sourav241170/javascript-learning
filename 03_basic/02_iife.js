@@ -2,10 +2,10 @@
 // This is used to get rid of the pollution from the global scope. 
 
 
-// function database(){
-//     console.log(`DB Connected`);
-// }
-// database()
+function database(){
+    console.log(`DB Connected`);
+}
+database(); //add ";" to execute two IIFE together 
 
 //OR
 
