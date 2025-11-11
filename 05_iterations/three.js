@@ -10,7 +10,6 @@ for (const num of arr) {
 const greetings= "Hello World!"
 for (const greet of greetings) {
     // console.log(`Each Character is: ${greet}`);
-    
 }
 
 const map= new Map()
