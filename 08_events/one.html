@@ -19,6 +19,7 @@
    </div>
 </body>
 <script>
+
     // document.getElementById('owl').onclick= function(){
     //     alert('This is an Owl')
     // }
@@ -28,8 +29,21 @@
     // })
 
 
-    document.getElementById('owl').addEventListener('click', function(e){
+    // document.getElementById('google').addEventListener('click', function(e){
+    //     e.preventDefault(); // do not redirect
+    //     e.stopPropagation(); // doesn't bubble and go up
+    // }, false)
+
+
+// +++++++++++ Image remove onClick ++++++++++++
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.parentNode);
+        if (e.target.tagName=== "IMG") {                 // Else clicking on list will remove the entire UL 
+            let removeImage= e.target.parentNode
+            removeImage.remove()
+        }
         
     })
+
 </script>
 </html>
