@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sync/ Async Projects</h1>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+
+    // +++++ Change H1 text after an interval of time
+
+    const changeH1= function(){
+        document.querySelector('h1').innerHTML= "Learning Javascript"
+    }
+    const stopTimer= setTimeout(changeH1, 2000)
+
+    // ++++++ Stop the change in H1 by clicking the button
+    
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(stopTimer)
+        console.log("Stopped");
+        
+    })
+
+</script>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Set Interval</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+    let count= 1;
+    let intervalId= null;
+
+    const timer= function(){
+        console.log(`Count: ${count++}`);
+    }
+
+    document.querySelector('#start').addEventListener('click', function(){
+        if (intervalId === null) {   // prevents multiple intervals
+            intervalId = setInterval(timer, 1000);
+        }
+    });
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearInterval(intervalId)
+        intervalId= null; //continue the timer again on click
+    });
+</script>
+</html>
